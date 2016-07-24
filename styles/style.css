@@ -142,6 +142,12 @@ ul p {
 	font-size: 0.5em;
 	color: black;
 	padding-left: 10px;
+	padding-bottom: 5px;
+	position: fixed;
+	left: 0px;
+	bottom: 3px;
+	height: 5px;
+	width: 100%;
 }
 
 /*---------------------------------------------------------------------------------
@@ -151,12 +157,29 @@ ul p {
 @media screen and (max-width: 700px) {
 	#info {
 		display: inline;
-		padding-right: 0px;
+		padding-right: 5px;
 		top: 0px;
+		font-size: 0.8em;
+	}
+
+	#infoOverlay {
+		width: 20em;
+	}
+
+	h1 {
+		font-size: 1.5em;
+	}
+
+	#infodisplay {
+		max-width: 420px;
 	}
 }
 
 @media screen and (max-width: 450px) {
+	h1 {
+		font-size: 1em;
+	}
+
 	.searchWrapper {
 		height: 95px;
 	}
@@ -169,4 +192,11 @@ ul p {
 		background-color: black;
 	}
 
+	#infoOverlay {
+		width: 15em;
+	}
+
+	#infodisplay {
+		max-width: 200px;
+	}
 }

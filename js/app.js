@@ -103,7 +103,7 @@ function LoadMap(markers) {
           //Event listener for when a marker i clicked
           google.maps.event.addListener(marker, "click", function (e) {
             //Wrap the content inside an HTML DIV in order to set height and width of InfoWindow.
-            infoWindow.setContent("<div style = 'max-height:300px'>" + '<p style="font-size: 24px; text-decoration: underline;"><strong><a href="' + data.link + '" target="blank">' + data.name + '</a></strong></p>' + "<br><p>" + data.description + "</p></div>");
+            infoWindow.setContent("<div id='infodisplay' style = 'max-height:300px'>" + '<p style="font-size: 1.5em; text-decoration: underline;"><strong><a href="' + data.link + '" target="blank">' + data.name + '</a></strong></p>' + "<br><p>" + data.description + "</p></div>");
             //Open the markers infowindow
             infoWindow.open(map, marker);
           });
@@ -127,7 +127,7 @@ function LoadMap(markers) {
           //Event listener for when a marker i clicked        
           google.maps.event.addListener(marker, "click", function (e) {
             //Wrap the content inside an HTML DIV in order to set height and width of InfoWindow.
-            infoWindow.setContent("<div style = 'max-height:300px'>" + "<p style='font-size: 24px; text-color: red;'><strong>Meetup only supports location accuracy by zip code within the USA, Canda and GB</strong></p><br><p style='font-size: 18px;'>Here is a list of all the Meetups in the city of " + data.city + ':' + '</p><br><a style="font-size: 18px;" href="http://www.meetup.com/cities/'+data.country+'/'+data.city+'" target="blank">List of all Meetups in '+data.city+'</a></div>');
+            infoWindow.setContent("<div id='infodisplay' style = 'max-height:300px'>" + "<p style='font-size: 1.5em; text-color: red;'><strong>Meetup only supports location accuracy by zip code within the USA, Canda and GB</strong></p><br><p style='font-size: 18px;'>Here is a list of all the Meetups in the city of " + data.city + ':' + '</p><br><a style="font-size: 18px;" href="http://www.meetup.com/cities/'+data.country+'/'+data.city+'" target="blank">List of all Meetups in '+data.city+'</a></div>');
             //Open the markers infowindow
             infoWindow.open(map, marker);
           });
