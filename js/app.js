@@ -32,6 +32,7 @@ $(function(){
       $("#infoOverlay").hide();
       $(".searchWrapper").show();
       $("#map").show();
+      initMap();
     })
 });   /* End of document ready */
 
