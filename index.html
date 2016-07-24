@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="en">
+	<head>
+		<title>Find a Meetup in your City</title>
+		<!-- Meta Tags -->
+		<meta charset="utf-8"/>
+
+		<!-- Fonts -->
+		<link href='https://fonts.googleapis.com/css?family=Russo+One' rel='stylesheet' type='text/css'>
+		<link href='https://fonts.googleapis.com/css?family=Open+Sans' rel='stylesheet' type='text/css'>
+		
+		<!-- Stylesheets -->
+		<link rel="stylesheet" href="styles/reset.css">
+		<link rel="stylesheet" href="styles/style.css"/>
+	</head>
+
+	<body>
+		<!-- Header Section -->
+		<div id="h1Wrapper">
+			<p id="info">Info</p>
+			<h1>Find a Meetup in your City</h1>
+		</div>
+
+		<!-- Search Section -->
+		<div class="searchWrapper">
+			<form id="search-term">
+				<input type="text" id="query" placeholder="City: 'Miami' or '33101'">
+				<input type="submit" id="submit" value="Search">
+			</form>
+		</div>
+		
+		<!-- Map Section -->
+		<div id="mapWrapper">
+			<div id="infoOverlay">
+				<h2>Instructions</h2>
+				<ul>
+					<li>Enter a city name (worldwide) or zip code (US only)</li>
+					<li>Zoom in and out of the map as necessary</li>
+					<li>Hoover over markers to show group names</li>
+					<li>Click on markers to get more information about the group and a link to the groups meetup page</li>
+					<br>
+				</ul>
+				<h2>Information</h2>
+				<ul>
+					<li><strong>Meetup only supports location accuracy by zip code within the USA, Canda and GB. All other countries will only show 1 marker per city. Just click on the marker and you will find a link to the complete list of listings in that city</strong></li>
+					<li>If it can't find the city, the results will be based on your registered Meetup profile location, falling back on your IP's geographic location</li>
+				</ul>
+				<h2 id="gotit">Got it!</h2>
+			</div>
+			<div id="map"></div>
+		</div>
+
+		<!-- Credentials Section -->
+		<a id="by" href="">by marc hurley 2016</a>		
+
+
+		<!-- JavaScript -->
+		<script src="https://ajax.googleapis.com/ajax/libs/jquery/1.10.2/jquery.min.js"></script>
+		<script type="text/javascript" src="js/app.js"></script>
+		<script src="https://maps.googleapis.com/maps/api/js?key=AIzaSyBECK-6Z663GRj6Xe4jGcqp1CYsdF-Ts9k&callback=initMap"
+    async defer></script>
+	</body> 
+
+</html>
+

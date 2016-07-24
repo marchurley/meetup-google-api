@@ -1,0 +1,149 @@
+/*---------------------------------------------------------------------------------
+   Common Styles
+---------------------------------------------------------------------------------*/
+
+body {
+	width: 100%;
+	height: 100%;
+	font-family: 'Open Sans', sans-serif;
+	font-size: 1.2em;
+}
+
+/*---------------------------------------------------------------------------------
+   Header Section
+---------------------------------------------------------------------------------*/
+
+#h1Wrapper {
+	background-color: #ed1c40;
+	padding: 5px;
+	border-bottom: 0.1px ridge darkgrey;
+}
+
+h1 {
+	font-size: 2em;
+	text-align: center;
+	font-family: 'Russo One', sans-serif;
+	color: black;
+	clear: both;
+	margin: 20px;
+	color: white;
+}
+
+/*---------------------------------------------------------------------------------
+   Search Section
+---------------------------------------------------------------------------------*/
+
+.searchWrapper {
+	height: 70px;
+	position: relative;
+}
+
+#search-term {
+	text-align: center;
+}
+
+input {
+	position: relative;
+	width: 210px;
+	color: darkgrey;
+	font-family: 'Open Sans', sans-serif;
+	font-size: 0.9em;
+	border-radius: 1px;
+	padding: 0.3em;
+	background-color: #fff;
+	border: 1px solid darkgrey;
+	box-shadow: 0 8px 16px 0 rgba(0,0,0,0.2), 0 6px 20px 0 rgba(0,0,0,0.19);
+	cursor: pointer;
+	font-weight: 600;
+	-webkit-font-smoothing: antialiased;
+	font: rgb(33, 4, 33);
+	margin: 20px auto;
+	text-align: center;
+}
+
+#submit {
+	width: 200px;
+}
+
+/*---------------------------------------------------------------------------------
+   Map Section
+---------------------------------------------------------------------------------*/
+
+#mapWrapper {
+    width: 100%;
+    height: 590px;
+}
+
+
+#map {
+    width: 100%;
+    height: 100%;
+    border-top: 0.1px ridge darkgrey;
+    border-bottom: 1px solid darkgrey;
+}
+
+
+/*---------------------------------------------------------------------------------
+   Info Overlay Section
+---------------------------------------------------------------------------------*/
+
+#infoOverlay {
+	display: none;
+	width: 650px;
+	margin: 0 auto;
+	padding-top: 20px;
+}
+
+#info {
+	position: relative;
+	display: block;
+	float: right;
+	color: white;
+	padding-right: 30px;
+	top: 30px;
+	text-decoration: underline;
+	cursor: pointer;
+}
+
+
+h2 {
+	text-align: center;
+	font-size: 1.5em;
+	padding: 20px;
+	font-weight: 600;
+	text-decoration: underline;
+}
+
+ul {
+	list-style-type: square;
+	line-height: 30px;
+}
+
+h2, ul {
+	padding-left: 40px;
+}
+
+ul p {
+	text-align: center;
+	padding-top: 30px;
+}
+
+#gotit {
+	color: #ed1c40;
+	cursor: pointer;
+}
+
+
+/*---------------------------------------------------------------------------------
+   Credentials Section
+--------------------------------------------------------------------------------*/
+
+#by {
+	font-size: 0.5em;
+	color: black;
+	padding-left: 10px;
+}
+
+
+
+
