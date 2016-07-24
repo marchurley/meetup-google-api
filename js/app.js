@@ -58,7 +58,7 @@ function getRequest(latLocation, lonLocation){
     order: "members",
     key: '661c4a3330618024684c2867765ee14',
   };
-  url = 'https:/api.meetup.com/find/groups?callback=?';
+  url = 'https://api.meetup.com/find/groups?callback=?';
 
   $.getJSON(url, params, function(data){
     LoadMap(data.data);
